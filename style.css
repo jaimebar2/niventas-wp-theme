@@ -1,10 +1,152 @@
-
+/*
 Theme Name: NI Ventas Child
-Theme URI: https://tusitio.com
+Theme URI: https://niventas.com
 Description: Tema personalizado para NI Ventas
-Author: Tu Nombre
+Author: Jaime
 Version: 1.0.0
 Template: twentytwentyfour
+*/
 
+/* RESET & ESTILOS BASE */
+.niv-landing {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+}
 
-/* --- PEGA AQUÍ TODO EL CSS QUE TE DI ANTERIORMENTE --- */
+/* TOPBAR */
+.niv-topbar {
+  background: #111;
+  color: #ccc;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 5%;
+  font-size: 12px;
+}
+.niv-topbar-left span { margin-right: 15px; }
+
+/* HEADER */
+.niv-header {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  border-bottom: 1px solid #eee;
+}
+.niv-logo h2 { margin: 0; font-size: 22px; color: #111; letter-spacing: 1px; }
+.niv-logo p { margin: 0; font-size: 9px; color: #b59851; font-weight: bold; }
+.niv-nav a { text-decoration: none; color: #333; margin-left: 15px; font-size: 13px; font-weight: 600; }
+
+/* BOTONES */
+.niv-btn-gold {
+  background: #c2a35d;
+  color: #fff !important;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+.niv-btn-outline {
+  border: 1px solid #c2a35d;
+  color: #c2a35d !important;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+.niv-btn-whatsapp {
+  background: #9d8142;
+  color: #fff !important;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* HERO */
+.niv-hero {
+  display: flex;
+  align-items: center;
+  padding: 50px 5%;
+  background: #fff;
+  gap: 30px;
+}
+.niv-hero-content { flex: 1; }
+.niv-hero-content h1 { font-size: 38px; color: #a18239; margin-bottom: 15px; }
+.niv-hero-image { flex: 1; }
+.niv-hero-image img { width: 100%; border-radius: 8px; }
+
+/* FEATURES */
+.niv-features {
+  display: flex;
+  background: #1a1a1a;
+  color: #fff;
+  padding: 20px 5%;
+  justify-content: space-around;
+  text-align: center;
+}
+.niv-feature-card .icon { font-size: 24px; margin-bottom: 5px; }
+.niv-feature-card h4 { margin: 5px 0; color: #d4af37; font-size: 12px; }
+.niv-feature-card p { margin: 0; font-size: 11px; color: #aaa; }
+
+/* CATÁLOGO */
+.niv-catalog { padding: 50px 5%; text-align: center; }
+.niv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+.niv-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.niv-card img { width: 100%; border-radius: 6px; }
+.niv-card h3 { font-size: 14px; margin: 15px 0 10px; color: #111; }
+.niv-card ul { padding-left: 18px; font-size: 12px; color: #666; }
+.niv-card-btn { text-decoration: none; color: #b59851; font-weight: bold; font-size: 12px; margin-top: 15px; display: inline-block; }
+
+/* BANNERS */
+.niv-banner-shipping, .niv-banner-vehicles {
+  display: flex;
+  align-items: center;
+  padding: 40px 5%;
+  margin: 20px 5%;
+  background: #fff;
+  border-radius: 8px;
+  gap: 20px;
+}
+.niv-banner-vehicles { background: #111; color: #fff; }
+.niv-dark-card .badge { background: #333; color: #ccc; font-size: 10px; padding: 3px 8px; border-radius: 3px; }
+
+/* STATS Y WHY */
+.niv-info-grid { display: flex; padding: 50px 5%; gap: 40px; background: #fff; }
+.niv-why, .niv-stats { flex: 1; }
+.niv-stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; text-align: center; }
+.niv-stats-grid h2 { color: #b59851; margin: 0; font-size: 32px; }
+
+/* CTA */
+.niv-cta {
+  background: #f4efe6;
+  padding: 40px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* FOOTER */
+.niv-footer { background: #111; color: #888; padding: 40px 5% 20px; font-size: 12px; }
+.niv-footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 30px; }
+.niv-footer h3, .niv-footer h4 { color: #fff; margin-bottom: 15px; }
+.niv-footer ul { list-style: none; padding: 0; }
+.niv-footer a { color: #888; text-decoration: none; }
+.niv-copy { text-align: center; margin-top: 30px; border-top: 1px solid #222; padding-top: 15px; }
